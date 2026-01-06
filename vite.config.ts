@@ -3,10 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/fashion-ai/",
-  server: {
-    proxy: {
-      "/api": "http://localhost:4000",
-    },
-  },
+  base: "/fashion-ai/", // 👈 repo name EXACT
 });
